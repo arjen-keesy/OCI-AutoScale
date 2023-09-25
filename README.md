@@ -70,7 +70,7 @@ Youtube demonstration video: https://youtu.be/veHbyvDB74A
   - allow dynamic-group Autoscaling to manage all-resources in tenancy
 - Login to your instance using an SSH connection
 - run the following commands:
-  - wget https://raw.githubusercontent.com/AnykeyNL/OCI-AutoScale/master/install.sh
+  - wget https://raw.githubusercontent.com/arjen-keesy/OCI-AutoScale/master/install.sh
   - bash install.sh
 - If this is the first time you are using the Autoscaling script, go to the OCI-Autoscale directory and run the following command:
   - python3 CreateNameSpaces.py -ip
