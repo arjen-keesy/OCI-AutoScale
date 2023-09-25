@@ -72,6 +72,10 @@ Youtube demonstration video: https://youtu.be/veHbyvDB74A
 - run the following commands:
   - wget https://raw.githubusercontent.com/arjen-keesy/OCI-AutoScale/master/install.sh
   - bash install.sh
+  - sudo su
+- create a user in Oracle Cloud and run the command 'oci setup config'
+    - and give user OCID, Tenant OCID and region; generate a private key and use the public key as API in user maintenance of the just created user.
+    - give oracle cloud some time to populate the rights of the user ( maybe 5 minutes? )
 - If this is the first time you are using the Autoscaling script, go to the OCI-Autoscale directory and run the following command:
   - python3 CreateNameSpaces.py -ip
 
