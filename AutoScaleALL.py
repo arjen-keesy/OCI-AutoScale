@@ -64,6 +64,18 @@ RateLimitDelay = 2  # Time in seconds to wait before retry of operation
 current_host_time = datetime.datetime.today()
 current_utc_time = datetime.datetime.utcnow()
 
+
+## >> Arjen: 25-09-2023:
+##make sure the hour is on the next hour when the minute is 55 or more,
+## so the scheduled 'Down@minute-56' method will look to the next hour, and shuts down before the hour is passed.
+##
+if current_host_time.minute() >= 55:
+   current_host_time = current_host_time + timedelta( 0, 300 )
+   current_utc_time = current_utc_time + timedelta( 0, 300 )
+
+
+
+
 ##########################################################################
 # Print header centered
 ##########################################################################
